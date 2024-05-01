@@ -1,0 +1,62 @@
+
+1.              Program diatas tentang mengelola informasi karyawan dan menejer di perusahaan
+
+
+2.              Perlu dilakukan karena konstruktor superclass biasanya melakukan inisialisasi
+                penting yang mungkin diperlukan oleh subclass. Dengan memanggil konstruktor superclass, 
+                Anda memastikan bahwa semua inisialisasi yang diperlukan telah dilakukan sebelum melakukan 
+                inisialisasi tambahan di subclass.
+
+
+3.              Karena tidak ada perubahan di kelas main (tidak dipanggil konstriktor dengan parameter
+                hanya String), maka tidak terjadi apa apa. Konstruktor dengan parameter hanya String tidak
+                error.
+
+
+4.              Akan terjadi error karena Constructor Mismatch: Konstruktor yang Anda gunakan untuk membuat objek Manager 
+                menerima parameter yang berbeda dengan konstruktor yang ada di kelas Manager. Konstruktor yang didefinisikan 
+                dalam Manager memerlukan tambahan parameter double bonus, tetapi di MainEmployee.java, Anda memanggil konstruktor 
+                tanpa memberikan nilai untuk bonus.
+
+
+5               Keyword this digunakan dalam Java untuk merujuk pada instance saat ini dari kelas yang sedang berjalan.
+                Ini berguna untuk membedakan antara variabel kelas dan parameter metode yang memiliki nama yang sama, 
+                atau untuk merujuk ke variabel kelas dari dalam metode atau konstruktor.
+
+                Dalam konstruktor Employee, menghapus this menyebabkan variabel lokal name dan salary digunakan, 
+                bukan variabel kelas name dan salary. Ini berarti parameter konstruktor hanya akan menugaskan nilainya
+                kembali kepada dirinya sendiri, tidak mempengaruhi variabel kelas. Jadi, variabel kelas akan tetap tidak
+                terinisialisasi.
+
+                Dalam konstruktor Manager, menghapus this pada inisialisasi variabel bonus akan menyebabkan variabel
+                lokal bonus digunakan, bukan variabel kelas bonus. Oleh karen
+
+6.              Di konstructor Manager, parameter nya sesuai dengan yang di class Main, tapi metode super
+                (yang memanggil konstructor di Employee) hanya memasukkan parameter name. Sehingga,
+                parameter lainnya (salary, month, day, year) tidak diteruskan ke konstructor di Employee.
+                Oleh karena itu, parameter dari instansiasi Manager bernama boss hanya mengubah nama,
+                sisa nya nilai default. Pada saat pemanggilan metode getter, nilai salary awalnya 0. Tetapi
+                karena ada method di Main yang mengubah nilai salary, Maka nilai akhir salary boss adalah 5000
+
+
+7.              Untuk superclass nya, ketika kita lihat method nya maka sudah menggunakan modifier
+                public. Gunanya method public ini adalah dapat diakses terhadap semua package atau semua
+                class di dalam satu project.
+                Dalam konsep inheritance, ketika ada subclass yang ingin menggunakan variabel/method dari
+                superclass, maka variabel/method dari superclass itu hendaknya diubah access modifiernya
+                menjadi protected. Sehingga variabel itu hanya dapat diakses melalui kelas itu sendiri dan
+                subclassnya.
+                Sedangkan, kalau variabel superclassnya menggunakan default, maka variabel itu hanya
+                dapat diakses di kelas itu sendiri, di subclass nya, dan class lain yang terdapat dalam satu
+                package.
+                Jika ingin variabelnya hanya dapat diakses terhadap class itu sendiri, maka menggunakan
+                access modifier private.
+
+8.              Error, karena method private hanya dapat diakses di class itu sendiri, sedangkan method di
+                kelas Employee dipanggil di class lainnya
+
+                Kode tidak error, terbukti bahwa method protected hanya dapat diakses melalui class itu
+s               endiri dan subclass nya
+
+
+
