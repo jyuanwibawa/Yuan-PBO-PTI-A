@@ -1,0 +1,82 @@
+A. Encapsulation 1 
+Pertanyaan 
+1. Lakukan percobaan diatas dan benahi jika menemukan kesalahan! 
+....................................................................................................................... 
+....................................................................................................................... 
+ 
+2. Jika pada baris 6 s1.setName diubah menjadi s1.getName apa yang terjadi? jelaskan! 
+....................................................................................................................... 
+....................................................................................................................... 
+ 
+3. Setelah diperbaiki, ubahlah hak akses pada baris 4 (pada class Student)  menjadi private 
+apa yang terjadi jika class Test dijalankan? Jelaskan! 
+....................................................................................................................... 
+....................................................................................................................... 
+ 
+4. Jika kedua kelas diatas terdapat dalam package yang sama apakah konsep enkapsulasi 
+tetap berfungsi? jelaskan! 
+....................................................................................................................... 
+....................................................................................................................... 
+ 
+B. Encapsulation 2 
+Pertanyaan 
+1. Method apakah yang menjadi accessor (getter) ? 
+....................................................................................................................... 
+ModulPraktikum – PemrogramanLanjut 
+ 
+....................................................................................................................... 
+ 
+2. Tambahkan source code berikut dibawah baris ke 6 pada class TestVehicle1. 
+System.out.println("Add load(100kg) : " + (vehicle.load=500)); 
+Jalankan program, apakah output dari program tersebut?  
+Kembalikan program seperti semula. 
+....................................................................................................................... 
+....................................................................................................................... 
+ 
+3. Ubahlah tipe data pada atribut load dan maxload pada class Vehicle1 menjadi public.  
+Jalankan program, apakah output dari program tersebut? 
+a. Tambahkan source kode berikut dibawah baris ke 6 pada class TestVehicle1. 
+System.out.println("Add load(100kg) : " + (vehicle.load=500)); 
+Jalankan program, apakah output dari program tersebut?  
+Kembalikan program seperti semula. 
+b. Tambahkan source kode berikut dibawah baris ke 12 pada class TestVehicle1. 
+System.out.println("Add load(100kg) : " + (vehicle.load=500)); 
+Jalankan program, apakah output dari program tersebut?  
+Kembalikan program seperti semula. 
+....................................................................................................................... 
+....................................................................................................................... 
+ 
+4. Ulangi  instruksi  pada  nomer  4  dengan  mengubah  tipe  data  pada  atribut  load  dan  maxload 
+pada class Vehicle1 menjadi protected. 
+....................................................................................................................... 
+....................................................................................................................... 
+5. Ulangi  instruksi  pada  nomer  4  dengan  mengubah  tipe  data  pada  atribut  load  dan  maxload 
+pada class Vehicle1 menjadi default. 
+....................................................................................................................... 
+....................................................................................................................... 
+  
+ModulPraktikum – PemrogramanLanjut 
+ 
+ 
+Tugas Praktikum 
+Anda  dan  tim  anda  mendapat  sebuah  proyek  untuk  merancang  sistem  transaksi  pada 
+sebuah  swalayan  Tiny.  Anda  ditugasi  oleh  tim  untuk  membuat  programnya  berdasarkan 
+hasil analisis tim anda : 
+ 
+1. Informasi  akun  seorang  pelanggan  (saldo,  nomor  pelanggan,  nama)  tidak  bias 
+diubah oleh pelanggan secara langsung. 
+2. Nomor pelanggan terdiri dari 10 digit, dimana 2 digit awal adalah jenis rekening 
+o 38 : Pelanggan jenis silver; setiap pembelian diatas 1 jt maka mendapat  
+cashback sebesar 5% 
+o 56 :  Pelanggan  jenis  gold;  setiap  pembelian  diatas  1  jt  maka  mendapat  
+cashback sebesar 7%, selain itu cashback 2% (cashback kembali ke saldo) 
+o 74  : Pelanggan jenis platinum; setiap pembelian diatas 1 jt maka 
+mendapat  cashback sebesar 10%, selain itu cashback 5% (cashback 
+kembali ke saldo) 
+3. Pelanggan harus memiliki saldo minimal Rp10.000, jika saldo pasca transaksi kurang 
+dari batas minimal tadi, maka transaksi pembelian dianggap gagal 
+4. Buatlah sistem transaksi swalayan  ini terbatas pada pembelian dan top up saja dan 
+menggunakan  PIN  dan  nomor  pelanggan  sebagai  syarat  transaksi  pembelian  atau 
+top up.  
+5. Apabila pelanggan melakukan 3x kesalahan dalam autentifikasi, maka akun 
+pelanggan akan defreeze / diblokir sehingga tidak bisa digunakan lagi

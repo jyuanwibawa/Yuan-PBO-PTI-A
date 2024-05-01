@@ -1,5 +1,5 @@
 public class Vehicle1 {
-    private double load, maxLoad;
+    default double load, maxLoad;
 
     public Vehicle1(double max) {
         this.maxLoad = max;
