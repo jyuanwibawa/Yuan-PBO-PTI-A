@@ -1,0 +1,60 @@
+no 1
+Jika sebuah program Java memiliki berbagai kelas tetapi tidak memiliki kelas yang mengandung metode 
+main, maka program tersebut tidak dapat dieksekusi secara langsung. Ketika mencoba menjalankan program
+ tersebut,akan terjadi error yang mengatakan bahwa JVM (Java Virtual Machine) tidak dapat menemukan
+  metode main.
+
+no 2
+    Dalam bahasa pemrograman Java, sebuah interface tidak bisa diinstansiasi secara langsung menjadi 
+    sebuah objek. Berikut adalah beberapa alasan mengapa interface tidak bisa diinstansiasi:
+
+    Tujuan utama dari interface adalah untuk menyediakan metode yang harus diimplementasikan oleh
+     kelas yang mengimplementasikan interface tersebut. Ini membantu dalam mencapai abstraksi dan 
+     pemisahan kontrak dari implementasi. Dengan demikian, menginstansiasi interface secara langsung 
+     tidak masuk akal karena interface tidak memiliki logika konkret.
+
+no 3
+    Ya, sebuah kelas di Java dapat mengimplementasikan lebih dari satu interface. Ini adalah salah 
+    satu fitur utama dari Java yang mendukung konsep multiple inheritance melalui interface. Multiple 
+    inheritance memungkinkan suatu kelas untuk mewarisi perilaku (metode) dari lebih dari satu
+    interface. Hal ini sangat berguna untuk menghindari masalah yang terkait dengan multiple 
+    inheritance dari kelas konkret yang ditemukan di beberapa bahasa pemrograman lain.
+    alasan
+    Interface memungkinkan Anda untuk memisahkan tanggung jawab dalam kode Anda. 
+    Sebuah kelas dapat mengimplementasikan beberapa interface untuk menunjukkan bahwa ia mendukung 
+    berbagaikapabilitas tanpa harus menempatkan semua logika dalam satu kelas dasar.
+
+    Dengan mengimplementasikan banyak interface, sebuah kelas dapat
+    digunakan dalam berbagai konteks yang berbeda, meningkatkan fleksibilitas dan reusabilitas kode.
+
+    Java tidak mendukung multiple inheritance dari kelas konkret untuk menghindari masalah seperti diamond
+    problem. Namun, dengan mengimplementasikan banyak interface, Anda masih bisa mendapatkan keuntungan 
+    dari multiple inheritance tanpa menghadapi masalah tersebut, karena interface hanya mendeklarasikan
+     metode tanpa menyediakan implementasi.
+
+no 4 
+    Kelas Manusia Anda mengimplementasikan dua interface: MakhlukHidup dan Identitas. Error terjadi karena
+    terdapat metode tampilkanNama dalam kelas Manusia yang diimplementasikan, namun tidak didefinisikan
+     dalam interface yang diimplementasikan oleh kelas tersebut.
+
+    Dari kode yang diberikan, tampak bahwa interface Identitas hanya mendefinisikan metode
+    tampilkanUmur. Jika interface MakhlukHidup juga tidak mendefinisikan metode tampilkanNama,
+    maka implementasi metode tampilkanNama di kelas Manusia akan menyebabkan error, 
+    karena metode tersebut tidak ada dalam kontrak interface yang diimplementasikan.
+   
+
+No 5
+    Kata kunci interface digunakan untuk mendefinisikan sebuah interface, sementara implements digunakan
+     untuk mengimplementasikan satu atau lebih interface pada sebuah kelas.
+
+no 6
+    orang.makan(): Metode makan dipanggil pada objek orang. Ini mungkin merupakan suatu aksi yang
+    dilakukan oleh objek Manusia.
+    orang.berjalan(): Metode berjalan dipanggil pada objek orang. Ini juga mungkin suatu aksi yang
+    dilakukan oleh objek Manusia.
+    orang.bersuara(): Metode bersuara dipanggil pada objek orang. Ini bisa menjadi metode untuk
+    menghasilkan suara atau ucapan dari objek Manusia.
+    orang.tampilkanNama(): Metode tampilkanNama dipanggil pada objek orang. Ini mungkin 
+    untuk menampilkan nama objek Manusia.
+    orang.tampilkanUmur(): Metode tampilkanUmur dipanggil pada objek orang. Ini mungkin
+     untuk menampilkan umur objek Manusia.
